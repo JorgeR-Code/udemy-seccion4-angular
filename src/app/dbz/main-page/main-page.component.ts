@@ -11,31 +11,12 @@ import { DbzService } from '../services/dbz.service';
 
 export class MainPageComponent {
 
-personajes: Personaje[] = [
-  {
-    nombre: 'Trunks',
-    poder: 14235
-  },
-  {
-    nombre: 'Vegeta',
-    poder: 8255
-  }
-];
-
 nuevo: Personaje = {
   nombre: '',
   poder: 0
 }
 
-agregar(event: Personaje){
 
-  this.personajes.push(event);
-
-}
-
-
-constructor(private dbzService: DbzService){
-
-}
+constructor(){}
 
 }
